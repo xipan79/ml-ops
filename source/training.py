@@ -35,8 +35,9 @@ print(f"input spec (in this case, just an S3 path): {inputs}")
 
 
 estimator = PyTorch(
-    entry_point="code/mnist.py",
-    # source_dir="code",
+    #entry_point="code/mnist.py",
+    entry_point="mnist.py",
+    source_dir="code",
     role=role,
     framework_version="1.4.0",
     instance_count=1,
